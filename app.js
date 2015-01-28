@@ -22,8 +22,10 @@ module.exports = {
   
   },
 
-  twoStrings : function () {
-
+  twoStrings : function (locateStr, circleStr) {
+    var dblCircleStr = circleStr.concat(circleStr);
+    
+    return dblCircleStr.indexOf(locateStr) >= 0;
 
   },
 

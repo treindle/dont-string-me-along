@@ -13,9 +13,11 @@ describe('app.twoStrings', function() {
 
     it('should be within the circular variation of the word', function() {
     
-    var testString = ['oh','hello'];
-    var result = dsma.findMissingNumbers(testString);
-    expect(result).to.be(true);
+    var cirString = 'hello';
+    var findString = 'oh';
+    var result = dsma.twoStrings(findString, cirString);
+
+    expect(result).to.equal(true);
 
   
   });
