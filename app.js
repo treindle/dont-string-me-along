@@ -24,14 +24,14 @@ module.exports = {
 
   twoStrings : function (locateStr, circleStr) {
     var dblCircleStr = circleStr.concat(circleStr);
-    
+
     return dblCircleStr.indexOf(locateStr) >= 0;
 
   },
 
-  palindrome : function () {
+  palindrome : function (word) {
 
-     var input = 'racecar';
+    return word === word.split('').reverse().join('');
 
   }
 };
