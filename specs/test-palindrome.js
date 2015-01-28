@@ -15,7 +15,7 @@ describe('app.palindrome', function() {
     
     var testString = 'racecar';
     var result = dsma.palindrome(testString);
-    expect(result).should.be('racecar');
+    expect(result).to.be.equal(true);
    
   });
   
