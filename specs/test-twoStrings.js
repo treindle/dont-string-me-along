@@ -20,5 +20,12 @@ describe('app.twoStrings', function() {
     expect(result).to.equal(true);
 
   
-  });
+    });
+
+    it('If non-string arguements are passed, return error', function() {
+     var testArg = 1234;
+     var testArg2 = '4321'; 
+     var result = dsma.twoStrings(testArg, testArg2);
+     expect(result).to.be.equal('ERROR: arguements should be a strings');
+    });
 });

@@ -18,5 +18,17 @@ describe('app.palindrome', function() {
     expect(result).to.be.equal(true);
    
   });
+
+  it('If non-string arguement is passed, return error', function() {
+     var testArg = 1234;
+     var result = dsma.palindrome(testArg);
+     expect(result).to.be.equal('ERROR: arguement should be a string');
+  });
+
+  it("should have palindrome within string", function() {
+    var testString = 'Jesse';
+    var result = dsma.palindrome(testString);
+    expect(result).to.be.equal(true);
+  });
   
 });

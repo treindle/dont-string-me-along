@@ -17,4 +17,12 @@ describe('app.swapWords', function() {
     
     expect(result).to.be.equal('Won, Jay');
   });
+
+  it('If non-string arguement is passed, return error', function() {
+     var testArg = 1234;
+     var result = dsma.swapWords(testArg);
+     expect(result).to.be.equal('ERROR: arguement should be a string');
+  });
+
+
 });
