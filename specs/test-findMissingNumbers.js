@@ -11,17 +11,10 @@ describe('app.findMissingNumbers', function() {
   
   });
 
-  it("should be an array", function() {
-
-    expect(dsma.findMissingNumbers).to.be.an('array');
-    
-  });
-
-  it('should find the missing numbers in the sequence', function() {
-    
+  it('should find the missing numbers "267"', function() {
     var testString = '9899100101103104105';
     var result = dsma.findMissingNumbers(testString);
-    expect(result).should.equal([2, 6, 7]);
+    expect(result).to.equal('267');
    
   });
   
