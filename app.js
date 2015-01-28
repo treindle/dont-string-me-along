@@ -1,11 +1,9 @@
 module.exports = {
 
-  findMissingNumbers : function () {
+  findMissingNumbers : function (sequence) {
     var possibleDigits = '0123456789';
     
     var missingDigits = '';
-
-    var sequence = "9899100101103104105";
 
     for (var i = 0; i < possibleDigits.length; i++) {
       if (sequence.indexOf(possibleDigits[i]) === -1) {
@@ -17,9 +15,10 @@ module.exports = {
 
   },
 
-  swapWords : function () {
+  swapWords : function (stringArg) {
 
-    var name = 'Jay Won';
+    var regEx = /(\w+)\s+(\w+)/;
+    return stringArg.replace(regEx, "$2, $1");
   
   },
 

@@ -14,7 +14,6 @@ describe('app.findMissingNumbers', function() {
   it('should find the missing numbers "267"', function() {
     var testString = '9899100101103104105';
     var result = dsma.findMissingNumbers(testString);
-    console.log('result string',result);
     expect(result).to.equal('267');
    
   });
