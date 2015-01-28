@@ -18,8 +18,9 @@ module.exports = {
   },
 
   swapWords : function () {
-    var name = "Jay Won";
 
+    var name = 'Jay Won';
+  
   },
 
   twoStrings : function () {
@@ -29,6 +30,7 @@ module.exports = {
 
   palindrome : function () {
 
+     var input = 'racecar';
 
   }
 };
